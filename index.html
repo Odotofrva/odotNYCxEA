@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OdotNYC x Ewing Athletics</title>
+
+  <!-- Fallback fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar (minimal) -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <nav class="toplinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#packaging">Packaging</a>
+        <a href="#community">Community</a>
+        <a class="pill" href="#proposal">Submit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- LOGO + VIDEO -->
+    <section class="intro" id="top">
+      <div class="container intro-inner">
+        <div class="logoCenter">
+          <img
+            id="brandLogo"
+            src="odotnyceax.png"
+            alt="OdotNYC Logo"
+            class="logoBig"
+            width="500px"
+            height="auto"
+          />
+          <div class="logoSub">× Ewing Athletics</div>
+        </div>
+
+        <div class="videoCard">
+          <div class="videoWrap" aria-label="Trailer video">
+            <!-- Replace YOUTUBE_VIDEO_ID with your YouTube id -->
+            <iframe
+              src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?rel=0&modestbranding=1"
+              title="OdotNYC x Ewing Athletics Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="videoMeta">
+            <div>
+              <h1 class="title">OdotNYC × Ewing Athletics</h1>
+              <p class="lead">
+                A story from the Carolinas to New York — honoring Patrick Ewing’s legacy through product,
+                packaging, collectibles, and an AR-powered experience.
+              </p>
+            </div>
+
+            <div class="ctaRow">
+              <a class="btn" href="#proposal">Submit a Proposal</a>
+              <a class="btn ghost" href="#about">Read the Collab Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / COLLAB INFO -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why This Collab</h2>
+          <p class="muted">
+            This is about legacy, identity, and building something that feels like New York—through my lens.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>From the Carolinas → Looking at the Knicks</h3>
+            <p>
+              As a kid in the Carolinas, watching New York felt like watching a different universe.
+              The Knicks had energy, grit, and style — it wasn’t just basketball, it was culture.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What Patrick Ewing Means to Me</h3>
+            <p>
+              Patrick Ewing represented strength, leadership, and responsibility. He made Madison Square Garden feel
+              like the center of the league. This collab is my salute to that era.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What We’re Building</h3>
+            <p>
+              A full drop ecosystem: the shoe, special box, custom tissue, a collectible UFO basketball,
+              plus a mobile-first AR layer to unlock story + digital assets.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGING / IMAGES -->
+    <section id="packaging" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>What Comes in the Packaging</h2>
+          <p class="muted">
+            Add your PNG renders in <span class="code">/public/assets/packaging/</span> (shoe, box, tissue, ball, AR card, bundle).
+          </p>
+        </div>
+
+        <div class="bundleRow">
+          <div class="bundleCard">
+            <img
+              src="odotnyceax.png"
+              alt="Full packaging bundle"
+              onerror="this.closest('.bundleCard').style.display='none';"
+            />
+          </div>
+
+          <div class="bundleList">
+            <div class="mini">Included</div>
+            <ul>
+              <li>Shoe (OdotNYC × Ewing)</li>
+              <li>Special Edition Box</li>
+              <li>Custom Tissue Paper</li>
+              <li>UFO Basketball Collectible</li>
+              <li>AR Insert / QR Card</li>
+            </ul>
+            <a class="btn small" href="#proposal">Add Your Input</a>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot">
+            <img src="odotnyceax.png" alt="Shoe render"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();" />
+            <figcaption>
+              <div class="cap-title">The Shoe</div>
+              <div class="cap-sub">Heritage energy with OdotNYC UFO language.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="odotnyceax.png" alt="Special box render"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();" />
+            <figcaption>
+              <div class="cap-title">Special Box</div>
+              <div class="cap-sub">Drop artifact design + story cues.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="odotnyceax.png" alt="Tissue paper render"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();" />
+            <figcaption>
+              <div class="cap-title">Tissue Paper</div>
+              <div class="cap-sub">Custom all-over print pattern.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="odotnyceax.png" alt="UFO basketball render"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();" />
+            <figcaption>
+              <div class="cap-title">UFO Basketball</div>
+              <div class="cap-sub">Collectible object with tech potential.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="odotnyceax.png" alt="AR insert render"
+                 onerror="this.parentElement.classList.add('missing'); this.remove();" />
+            <figcaption>
+              <div class="cap-title">AR Insert / QR Card</div>
+              <div class="cap-sub">Scan to unlock WebAR story + 3D assets.</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section id="community" class="section">
+      <div class="container">
+        <div class="section-head row">
+          <div>
+            <h2>Community Proposals</h2>
+            <p class="muted">Only approved submissions appear here.</p>
+          </div>
+          <button id="refreshBtn" class="btn ghost">Refresh</button>
+        </div>
+
+        <div id="proposals" class="proposal-grid">
+          <div class="empty">No approved proposals yet. Be the first to submit.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPOSAL FORM -->
+    <section id="proposal" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Submit Your Proposal</h2>
+          <p class="muted">
+            You’ll receive an email confirmation. Your submission is pending approval before it can appear publicly.
+          </p>
+        </div>
+
+        <form id="proposalForm" class="form">
+          <div class="form-grid">
+            <label>
+              <span>Name *</span>
+              <input name="name" required placeholder="Your name" />
+            </label>
+
+            <label>
+              <span>Email *</span>
+              <input name="email" type="email" required placeholder="you@email.com" />
+            </label>
+
+            <label>
+              <span>City *</span>
+              <input name="city" required placeholder="City" />
+            </label>
+
+            <label>
+              <span>State *</span>
+              <input name="state" required placeholder="State (e.g., NY)" />
+            </label>
+
+            <label class="full">
+              <span>Reason (optional)</span>
+              <textarea name="reason" rows="4" placeholder="Why should this shoe exist? Any details you want included?"></textarea>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Submit Proposal</button>
+            <div id="formMsg" class="muted"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> OdotNYC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
